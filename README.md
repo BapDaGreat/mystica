@@ -2,6 +2,9 @@
 **Multidisciplinary Brand Identity, Packaging Pre-Press, Motion & Full-Stack Website Pitch for Hold Media Agency**
 **Designed & Developed by Dayle Angelo Peña**
 
+- **Live Website Pitch:** [https://bapdagreat.github.io/mystica/](https://bapdagreat.github.io/mystica/)
+- **GitHub Repository:** [https://github.com/BapDaGreat/mystica](https://github.com/BapDaGreat/mystica)
+
 ---
 
 ## Brief Deliverables Covered
