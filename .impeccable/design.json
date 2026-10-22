@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T00:35:00+08:00",
+  "title": "Design System: Mystica — Atelier of Fine Paper, Silk Ribbon & Heirloom Keepsakes",
+  "extensions": {
+    "colorMeta": {
+      "burgundy-velvet": {
+        "role": "primary",
+        "displayName": "Deep Burgundy Bookcloth",
+        "canonical": "#4A121A",
+        "tonalRamp": ["#1E080C", "#2A0A10", "#320A10", "#4A121A", "#681D28", "#8B2F3D", "#B86B77", "#E6C5CA"]
+      },
+      "burgundy-deep": {
+        "role": "primary",
+        "displayName": "Pressed Wine Velvet",
+        "canonical": "#320A10",
+        "tonalRamp": ["#140508", "#1E080C", "#320A10", "#4A121A", "#631B25", "#85313D", "#B26B75", "#E2C1C6"]
+      },
+      "burgundy-night": {
+        "role": "primary",
+        "displayName": "Midnight Press Plate",
+        "canonical": "#1E080C",
+        "tonalRamp": ["#0D0305", "#140508", "#1E080C", "#320A10", "#4A121A", "#6B242F", "#9E5B65", "#D8B4BA"]
+      },
+      "champagne-foil": {
+        "role": "secondary",
+        "displayName": "Antique Champagne Gold Foil",
+        "canonical": "#C8A96E",
+        "tonalRamp": ["#3B2E16", "#594623", "#7A6132", "#9A7C43", "#B38E4C", "#C8A96E", "#E5C992", "#FFF5D6"]
+      },
+      "champagne-light": {
+        "role": "secondary",
+        "displayName": "Burnished Gold Leaf",
+        "canonical": "#E5C992",
+        "tonalRamp": ["#423319", "#634D28", "#876A39", "#A8864D", "#C8A96E", "#E5C992", "#F3E2BE", "#FFF9EB"]
+      },
+      "foil-gleam": {
+        "role": "secondary",
+        "displayName": "Specular Foil Gleam",
+        "canonical": "#FFF5D6",
+        "tonalRamp": ["#4D3E1F", "#735D31", "#997D45", "#BF9E5C", "#DFC282", "#F2DFB1", "#FFF5D6", "#FFFCF2"]
+      },
+      "ivory-cotton-600": {
+        "role": "neutral",
+        "displayName": "600gsm Warm Ivory Cotton Rag",
+        "canonical": "#F8F4EC",
+        "tonalRamp": ["#2B251D", "#4A4135", "#6E6252", "#948673", "#B8AC9A", "#DDD4C5", "#EFE7DA", "#F8F4EC"]
+      },
+      "ivory-parchment": {
+        "role": "neutral",
+        "displayName": "Blush Silk Parchment",
+        "canonical": "#EFE7DA",
+        "tonalRamp": ["#26211A", "#453C30", "#685C4B", "#8E7F6B", "#B3A590", "#D6CBB8", "#EFE7DA", "#FAF6EE"]
+      },
+      "ivory-card": {
+        "role": "neutral",
+        "displayName": "Archival Proof Card",
+        "canonical": "#FBF8F3",
+        "tonalRamp": ["#2E2820", "#4F4639", "#756857", "#9C8D79", "#C2B5A3", "#E3DACB", "#F4EFE6", "#FBF8F3"]
+      },
+      "espresso-ink": {
+        "role": "neutral",
+        "displayName": "Warm Espresso Press Ink",
+        "canonical": "#1E1114",
+        "tonalRamp": ["#120A0C", "#1E1114", "#331E23", "#4D3036", "#6B464E", "#8F6770", "#B8989F", "#E3D3D6"]
+      },
+      "burgundy-body": {
+        "role": "neutral",
+        "displayName": "Aged Burgundy Ink",
+        "canonical": "#42161D",
+        "tonalRamp": ["#1A080B", "#2E0F14", "#42161D", "#5E232C", "#7D3540", "#A15560", "#C78C95", "#EBD0D4"]
+      },
+      "muted-taupe": {
+        "role": "neutral",
+        "displayName": "Muted Mill Taupe",
+        "canonical": "#5C4347",
+        "tonalRamp": ["#211719", "#3B2A2D", "#5C4347", "#785A5F", "#96757A", "#B5989C", "#D4C1C4", "#EFE7E8"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display Optical Serif",
+        "purpose": "Hero statements and primary bilingual focal lockups."
+      },
+      "headline": {
+        "displayName": "Section Headline Serif",
+        "purpose": "Chapter h2 headings and specimen titles."
+      },
+      "title": {
+        "displayName": "Arabic Calligraphic Naskh",
+        "purpose": "Arabic display counterparts, ceremonial blessings, and RTL headlines."
+      },
+      "body": {
+        "displayName": "Atelier Editorial & UI Sans",
+        "purpose": "Brand storytelling, customizer controls, and agency brief verification copy."
+      },
+      "label": {
+        "displayName": "Pre-Press Technical Mono",
+        "purpose": "Paper weights (600gsm), dieline tolerances (3.0mm bleed), Pantone/CMYK codes, and timing tokens."
+      }
+    },
+    "shadows": [
+      {
+        "name": "paper-sheet-elevated",
+        "value": "0 14px 34px -12px rgba(42, 10, 15, 0.14)",
+        "purpose": "Single cast shadow for freestanding keepsake proof cards, hero specimen frames, and social ad mockups."
+      },
+      {
+        "name": "deboss-plate",
+        "value": "inset 0 2px 5px rgba(30, 17, 20, 0.12), inset 0 -1px 0 rgba(255, 255, 255, 0.7)",
+        "purpose": "Recessed letterpress blind-deboss impression plate inside the customizer card."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-quart",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Primary easing curve for tactile button press, swatch selection, and dieline plate toggles."
+      },
+      {
+        "name": "ease-silk",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Panel entrance and SVG silk ribbon wave choreography."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1440px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Burgundy Pill Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action trigger styled after dyed burgundy bookcloth with champagne gold focus ring.",
+      "html": "<button class=\"ds-btn-primary\"><span>Customize Keepsake Suite</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E5C992\" stroke-width=\"2\"><path d=\"M7 17L17 7M7 7h10v10\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; background: #4A121A; color: #F8F4EC; padding: 14px 24px; border-radius: 9999px; border: none; font-family: 'Jost', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: transform 180ms cubic-bezier(0.23, 1, 0.32, 1), background-color 180ms ease; } .ds-btn-primary:hover { background: #320A10; transform: translateY(-1px); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid #C8A96E; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Parchment Pill Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary action button on warm ivory cotton surfaces with hairline burgundy border.",
+      "html": "<button class=\"ds-btn-secondary\">Inspect Print Dielines &amp; Foil Plates</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: #EFE7DA; color: #1E1114; padding: 14px 20px; border-radius: 9999px; border: 1px solid rgba(74, 18, 26, 0.25); font-family: 'Jost', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: transform 180ms cubic-bezier(0.23, 1, 0.32, 1), background-color 180ms ease; } .ds-btn-secondary:hover { background: #E5DAC8; transform: translateY(-1px); } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: 2px solid #C8A96E; outline-offset: 2px; }"
+    },
+    {
+      "name": "Dieline Separation Plate Chip",
+      "kind": "chip",
+      "refersTo": "button-foil-cta",
+      "description": "Pre-press CAD separation plate toggle chip with color-coded registration dot.",
+      "html": "<button class=\"ds-chip-plate\"><span class=\"ds-dot\"></span><span>Gold Foil Plate</span></button>",
+      "css": ".ds-chip-plate { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 9999px; background: #320A10; color: #F8F4EC; border: 1px solid rgba(200, 169, 110, 0.6); font-family: 'JetBrains Mono', monospace; font-size: 12px; cursor: pointer; transition: transform 180ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-chip-plate:hover { transform: translateY(-1px); } .ds-chip-plate:focus-visible { outline: 2px solid #C8A96E; outline-offset: 2px; } .ds-dot { width: 8px; height: 8px; border-radius: 9999px; background: #E5C992; }"
+    },
+    {
+      "name": "Bilingual Foil Inscription Input",
+      "kind": "input",
+      "refersTo": "input-atelier",
+      "description": "Custom foil inscription field supporting optical Didone English and Naskh Arabic input.",
+      "html": "<input class=\"ds-input-atelier\" type=\"text\" value=\"Layla & Zayd — Forever Written in Light\" />",
+      "css": ".ds-input-atelier { width: 100%; padding: 10px 14px; border-radius: 10px; background: #F8F4EC; color: #1E1114; border: 1px solid rgba(74, 18, 26, 0.25); font-family: 'Bodoni Moda', Georgia, serif; font-size: 16px; } .ds-input-atelier:focus-visible { outline: 2px solid #C8A96E; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ruled Paper Specimen Card",
+      "kind": "card",
+      "refersTo": "card-paper-ruled",
+      "description": "Flat workbench specimen sheet governed by a single 1px architectural rule without drop shadow.",
+      "html": "<div class=\"ds-card-ruled\"><div class=\"ds-card-title\">Moments Worth Keeping</div><div class=\"ds-card-sub\">600gsm Warm Ivory Cotton Rag · Pantone 7428 C</div></div>",
+      "css": ".ds-card-ruled { background: #F8F4EC; color: #1E1114; border: 1px solid rgba(74, 18, 26, 0.14); border-radius: 16px; padding: 24px; } .ds-card-title { font-family: 'Bodoni Moda', Georgia, serif; font-size: 24px; margin-bottom: 6px; } .ds-card-sub { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5C4347; }"
+    },
+    {
+      "name": "Blind-Debossed Keepsake Proof Plate",
+      "kind": "custom",
+      "refersTo": "card-paper-elevated",
+      "description": "Recessed letterpress proof plate using inset shadow only to simulate 0.4mm blind deboss.",
+      "html": "<div class=\"ds-deboss-plate\"><div class=\"ds-deboss-en\">Layla &amp; Zayd — Forever Written in Light</div><div class=\"ds-deboss-spec\">STAMP: KURZ LUXOR 385 CHAMPAGNE GOLD FOIL + 0.4MM DEBOSS</div></div>",
+      "css": ".ds-deboss-plate { background: #F6F1E7; color: #1E1114; border-radius: 12px; padding: 28px; text-align: center; box-shadow: inset 0 2px 5px rgba(30, 17, 20, 0.12), inset 0 -1px 0 rgba(255, 255, 255, 0.7); } .ds-deboss-en { font-family: 'Bodoni Moda', Georgia, serif; font-size: 24px; color: #B38E4C; margin-bottom: 8px; } .ds-deboss-spec { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5C4347; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Paper Mill Atelier & Swatch Book",
+    "overview": "Mystica’s visual world treats the screen as a sunlit paper-mill workbench and bespoke stationer’s archive. Rather than relying on generic luxury e-commerce templates or synthetic digital lens flares, the system grounds every surface in tangible print craft: 600gsm warm ivory cotton rag paper (#F8F4EC), deep burgundy bookcloth and stitched grosgrain ribbon (#4A121A), and antique champagne gold hot-foil stamping (#C8A96E) that catches a directional warm specular sheen as the gallery light angle shifts.\n\nThe architecture bridges two simultaneous audiences for the Hold Media Agency pitch: retail clients commissioning bilingual (English & Arabic) milestone keepsake suites, and agency reviewers inspecting logo geometry, optical dual-script typography, CAD pre-press dielines (3.0mm bleed, die-cut, score, foil, and blind deboss plates), paid social creatives (9:16 Reels/TikTok and 4:5 GCC carousels), and choreographed motion engineering.",
+    "keyCharacteristics": [
+      "Tactile 600gsm cotton rag and dyed burgundy bookcloth surfaces with subtle SVG micro-grain paper fiber overlay (opacity: 0.35).",
+      "True bilingual English + Arabic (LTR/RTL) typographic parity pairing high-contrast optical Didone serifs (Bodoni Moda) with classical Cairo Naskh calligraphy (Amiri) on shared optical baselines.",
+      "Single-mechanism elevation discipline: surfaces are defined either by a 1px architectural rule, a single cast paper-stack shadow, or a recessed letterpress blind-deboss inset shadow—never stacked together on the same container.",
+      "Interactive pre-press and material proof tooling (live gallery foil light-angle slider, Pantone/CMYK swatch cabinet, and toggleable CAD separation plates)."
+    ],
+    "rules": [
+      {
+        "name": "The Foil Scarcity Rule",
+        "body": "Metallic champagne gold (#C8A96E / #E5C992) is reserved strictly for stamped seals, hairline rules, active focus/selection rings, and micro-badges—never used as a large card background fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Bookcloth Chapter Rule",
+        "body": "Dark burgundy surfaces (#320A10 and #1E080C) punctuate the ivory page as dedicated physical chapters (top pitch bar, hero specimen housing, packaging dieline workbench, and footer) rather than arbitrary dark-mode cards.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Kicker Heading Rule",
+        "body": "Section and card headings (<h1>, <h2>, <h3>) never carry small uppercase kicker or eyebrow labels stacked above them; headings open directly with editorial authority.",
+        "section": "typography"
+      },
+      {
+        "name": "The Zero Arabic Tracking Rule",
+        "body": "Arabic script (font-arabic / lang=\"ar\") always maintains letter-spacing: 0 and generous vertical leading (1.45–1.6) so Naskh ligatures and vocalization marks never fracture or clip.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single-Elevation Rule",
+        "body": "Never combine a 1px structural border and a cast box-shadow (or inset deboss shadow) on the same element. A surface is either ruled (1px border), elevated (cast shadow only), or debossed (inset shadow only).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do pair English (Bodoni Moda / Jost) and Arabic (Amiri / Readex Pro) with explicit dir=\"rtl\" and lang=\"ar\" attributes on Arabic containers and zero letter-spacing (letter-spacing: 0) on Arabic text.",
+      "Do enforce single-mechanism elevation on every container: choose either .paper-sheet-ruled (1px border), .paper-sheet-elevated (single cast shadow), or .deboss-plate (inset letterpress shadow).",
+      "Do use JetBrains Mono with tabular-nums for paper weights (600gsm), pre-press tolerances (3.0mm bleed), Pantone/CMYK values, and live pricing estimates.",
+      "Do honor prefers-reduced-motion: reduce by neutralizing continuous foil twinkle and SVG ribbon wave animations while preserving interactive state clarity."
+    ],
+    "donts": [
+      "Don't place uppercase kicker or eyebrow labels above <h1>, <h2>, or <h3> headings.",
+      "Don't stack a border and a box-shadow on the same card or plate container.",
+      "Don't apply positive letter-spacing (tracking-widest / uppercase) to Arabic script, which disconnects cursive Naskh letterforms.",
+      "Don't use synthetic lens flares, neon gradients, or scale(0) pop-in animations that violate physical paper and silk ribbon mechanics."
+    ]
+  }
+}

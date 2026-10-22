@@ -1,0 +1,261 @@
+@import "tailwindcss";
+
+:root {
+  /* Paper Mill Atelier & Swatch Book Palette */
+  --bg-ivory: #F8F4EC;
+  --bg-parchment: #EFE7DA;
+  --bg-linen: #E6DDD0;
+  --bg-burgundy: #4A121A;
+  --bg-burgundy-deep: #320A10;
+  --bg-burgundy-soft: #631B26;
+  --ink-espresso: #1E1114;
+  --ink-burgundy: #42161D;
+  --ink-muted: #5C4347;
+  --ink-ivory-muted: #D8C8B8;
+  --accent-foil: #C8A96E;
+  --accent-foil-bright: #E5C992;
+  --accent-foil-deep: #9A7B42;
+  --rule-hairline: rgba(74, 18, 26, 0.16);
+  --rule-foil: rgba(200, 169, 110, 0.34);
+
+  /* Typography */
+  --font-display: 'Bodoni Moda', Georgia, serif;
+  --font-arabic-display: 'Amiri', serif;
+  --font-sans: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-arabic-sans: 'Readex Pro', 'Jost', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Emil Kowalski Motion Tokens */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Browser Surface Theming (Craft Floor Requirement) */
+html {
+  background-color: var(--bg-ivory);
+  color: var(--ink-espresso);
+  font-family: var(--font-sans);
+  caret-color: var(--bg-burgundy);
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-burgundy) var(--bg-parchment);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-parchment);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-burgundy);
+  border-radius: 2px;
+}
+
+::selection {
+  background-color: var(--bg-burgundy);
+  color: var(--bg-ivory);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-foil);
+  outline-offset: 3px;
+}
+
+a {
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+/* Typography Utilities */
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic-display);
+  line-height: 1.45;
+}
+
+.font-arabic-ui {
+  font-family: var(--font-arabic-sans);
+}
+
+.font-sans-atelier {
+  font-family: var(--font-sans);
+}
+
+.font-mono-spec {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tactile Paper Surfaces & Ribbons (Elevation declared ONCE: either crisp rule OR physical cast shadow) */
+.paper-sheet-ruled {
+  background-color: var(--bg-ivory);
+  border: 1px solid var(--rule-hairline);
+}
+
+.paper-sheet-elevated {
+  background-color: var(--bg-ivory);
+  box-shadow: 0 18px 38px -14px rgba(42, 12, 18, 0.14), 0 4px 10px -3px rgba(42, 12, 18, 0.06);
+}
+
+.burgundy-cloth-surface {
+  background-color: var(--bg-burgundy);
+  color: var(--bg-ivory);
+}
+
+.burgundy-deep-surface {
+  background-color: var(--bg-burgundy-deep);
+  color: var(--bg-ivory);
+}
+
+/* Stitched Silk Grosgrain Ribbon Salvage Edge */
+.silk-ribbon-band {
+  background-color: var(--bg-burgundy);
+  position: relative;
+}
+
+.silk-ribbon-band::before,
+.silk-ribbon-band::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(200, 169, 110, 0.55) 0px,
+    rgba(200, 169, 110, 0.55) 5px,
+    transparent 5px,
+    transparent 9px
+  );
+  pointer-events: none;
+}
+
+.silk-ribbon-band::before {
+  top: 3px;
+}
+
+.silk-ribbon-band::after {
+  bottom: 3px;
+}
+
+/* Blind Letterpress Deboss Frame (Inset physical paper crease) */
+.deboss-plate {
+  background-color: #F6F1E7;
+  box-shadow: inset 0 2px 5px rgba(30, 17, 20, 0.09), inset 0 -1px 0 rgba(255, 255, 255, 0.85);
+}
+
+/* Interactive Controls & Press Feedback (Emil Kowalski Philosophy) */
+.btn-tactile {
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform 150ms var(--ease-out),
+    background-color 180ms var(--ease-out),
+    border-color 180ms var(--ease-out),
+    color 180ms var(--ease-out),
+    box-shadow 180ms var(--ease-out);
+}
+
+.btn-tactile:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hover-lift {
+    transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out);
+  }
+  .hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 22px 44px -14px rgba(42, 12, 18, 0.18), 0 6px 14px -4px rgba(42, 12, 18, 0.08);
+  }
+
+  .btn-primary-burgundy:hover {
+    background-color: #5E1823;
+  }
+
+  .btn-outline-atelier:hover {
+    background-color: rgba(74, 18, 26, 0.05);
+    border-color: var(--bg-burgundy);
+  }
+}
+
+/* Entry Transition using @starting-style */
+.atelier-panel-enter {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 240ms var(--ease-out), transform 240ms var(--ease-out);
+  @starting-style {
+    opacity: 0;
+    transform: scale(0.97) translateY(6px);
+  }
+}
+
+/* Subtle Pinpoint Foil Twinkle (Strictly for SVG star seal / metallic foil nodes) */
+@keyframes foilCatchlight {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.92) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06) rotate(8deg);
+  }
+}
+
+.foil-twinkle {
+  animation: foilCatchlight 3.6s var(--ease-in-out) infinite;
+  transform-origin: center;
+}
+
+.foil-twinkle-delayed {
+  animation: foilCatchlight 4.2s var(--ease-in-out) 1.4s infinite;
+  transform-origin: center;
+}
+
+@keyframes silkRibbonUnwrap {
+  0%, 100% {
+    stroke-dashoffset: 0;
+    transform: translateY(0px) scaleX(1);
+  }
+  50% {
+    stroke-dashoffset: 28;
+    transform: translateY(-2px) scaleX(1.03);
+  }
+}
+
+.ribbon-wave {
+  stroke-dasharray: 180 18;
+  animation: silkRibbonUnwrap 4.4s var(--ease-in-out) infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 120ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hover-lift:hover,
+  .btn-tactile:active {
+    transform: none !important;
+  }
+}
